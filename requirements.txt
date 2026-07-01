@@ -1,0 +1,16 @@
+# Core dependencies for the notebooks.
+#
+# NOTE: install PyTorch first from its CPU index so you don't pull GPU drivers:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+# then:  pip install -r requirements.txt
+#
+torch
+tiktoken
+numpy
+pandas
+matplotlib
+transformers
+# --- for running the .ipynb files locally (not needed on Colab) ---
+nbformat
+nbclient
+ipykernel
