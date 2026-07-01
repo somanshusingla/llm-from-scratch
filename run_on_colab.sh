@@ -26,7 +26,7 @@ echo
 for nb in 0[0-8]_*.ipynb; do
     case "$nb" in *_output.ipynb) continue;; esac
     echo "==================== exec: $nb ===================="
-    if colab exec -s "$SESSION" -f "$nb"; then
+    if colab exec -s "$SESSION" --timeout 5400 -f "$nb"; then
         out="${nb%.ipynb}_output.ipynb"
         if [ -f "$out" ]; then
             mv -f "$out" "$nb"     # keep the executed version as the notebook
