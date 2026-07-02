@@ -13,6 +13,9 @@ __pycache__/
 notebooks/the-verdict.txt
 notebooks/*.csv
 notebooks/*.pth
+notebooks/*.pt
+notebooks/*.safetensors
+notebooks/*.json
 notebooks/instruction-data.json
 notebooks/sms_spam_collection*/
 notebooks/sms_spam_collection.zip
